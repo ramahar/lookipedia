@@ -7,7 +7,7 @@ const SearchResult = ({ article }) => {
       <h2>{article.title}</h2>
       <p dangerouslySetInnerHTML={{__html: `${article.snippet}...`}}></p>
       <p>
-        <a href={`https://en.wikipedia.org/wiki/${article.title}`} target="_blank">Continue Reading...</a>
+        <a href={`https://en.wikipedia.org/wiki/${article.title}`} target="_blank">Read More...</a>
       </p>
     </article>
   );
