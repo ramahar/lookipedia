@@ -55,7 +55,6 @@ export default class App extends Component {
   render() {
     return (
       <div className="body">
-        {/* HEADER */}
         <header>
           <h1>Lookipedia </h1>
         </header>
@@ -69,7 +68,6 @@ export default class App extends Component {
             </div>
           </form>
           <p>...or read a <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">random Wikipedia article</a></p>
-          {/* LOADING SPINNER */}
           <div className="spinner" style={this.state.spinnerStyle}>
             <span className="fa fa-sync-alt fa-spin fa-2x fa-fw" aria-label="Loading..."></span>
           </div>
@@ -77,7 +75,6 @@ export default class App extends Component {
           <ResultsList results={this.state.searchResults} />
           <p className="message error-message" style={this.state.errorStyle}><span className="fa fa-exclamation-circle fa-lg fa-fw"></span>{this.state.errorMessage}</p>
         </main>
-        {/* FOOTER */}
         <footer>Created by <a href="https://github.com/ramahar" target="_blank">Rayyan Mahar</a></footer>
       </div>
     );
